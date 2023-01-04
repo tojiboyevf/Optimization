@@ -1,0 +1,4 @@
+numpy
+torch>=0.4.0
+colorama>=0.4.0
+tabulate>=0.7
