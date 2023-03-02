@@ -193,9 +193,8 @@ def main():
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     ckpt_name = get_ckpt_name(model=args.model, optimizer=args.optim, lr=args.lr,
-                              final_lr=args.final_lr, momentum=args.momentum,
-                              beta1=args.beta1, beta2=args.beta2, gamma=args.gamma,
-                              eps = args.eps,
+                              momentum=args.momentum, beta1=args.beta1, 
+                              beta2=args.beta2, eps = args.eps,
                               reset=args.reset, run=args.run,
                               weight_decay = args.weight_decay, scheduler = args.scheduler)
     print('ckpt_name')
